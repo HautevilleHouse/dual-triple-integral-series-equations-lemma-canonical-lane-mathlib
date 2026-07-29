@@ -1,0 +1,16 @@
+import canonicalLaneMathlib.AdmissibleClass
+import DualTripleIntegralSeriesEquationsLemmaCanonicalLaneLean.KernelRepresentation
+import DualTripleIntegralSeriesEquationsLemmaCanonicalLaneLean.TripleSeriesDecomposition
+import DualTripleIntegralSeriesEquationsLemmaCanonicalLaneLean.DualIntegralBoundary
+
+namespace HautevilleHouse
+namespace DualTripleIntegralSeriesEquationsLemmaCanonicalLaneLean
+
+def ConstrainedDualTripleClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_dual_triple_endgame (A : AdmissibleClass) : ConstrainedDualTripleClosure A :=
+  And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end DualTripleIntegralSeriesEquationsLemmaCanonicalLaneLean
+end HautevilleHouse

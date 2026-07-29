@@ -1,0 +1,13 @@
+import DualTripleIntegralSeriesEquationsLemmaCanonicalLaneLean.DualTripleIntegralSeriesEquations
+
+namespace HautevilleHouse
+namespace DualTripleIntegralSeriesEquationsLemmaCanonicalLaneLean
+
+structure AdmissibleClass where
+  object : DualTripleIntegralSeriesEquationsPackage
+  endpointSatisfied : Prop
+  remainderRecorded : Prop
+  gateWitness : endpointSatisfied ∨ remainderRecorded
+
+end DualTripleIntegralSeriesEquationsLemmaCanonicalLaneLean
+end HautevilleHouse
